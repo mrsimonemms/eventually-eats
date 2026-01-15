@@ -1,10 +1,28 @@
 services:
+  workflow:
+    build:
+      context: .
+      dockerfile: ./apps/golang.Dockerfile
+      target: dev
+      args:
+        APP: workflow
+    environment:
+      LOG_LEVEL: debug
+      TEMPORAL_ADDRESS: temporal:7233
+    restart: on-failure
+    volumes:
+      - ./apps:/go/root/apps
+    depends_on:
+      temporal:
+        condition: service_healthy
+
   ########################
   # Third-party services #
   ########################
   temporal:
     image: temporalio/temporal
     ports:
+      - 7233:7233
       - 8233:8233
     command: server start-dev --ip 0.0.0.0
     healthcheck:
