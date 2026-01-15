@@ -1,0 +1,19 @@
+{
+  "template": "https://github.com/mrsimonemms/new",
+  "commit": "d3e22867795499bfa3e5ce3b5c2d0a475bd4fbf5",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "eventually-eats",
+      "description": "Your food. Exactly Once. Eventually.",
+      "author": "Simon Emms <simon@simonemms.com>",
+      "repo": "github.com/mrsimonemms/eventually-eats",
+      "_template": "https://github.com/mrsimonemms/new",
+      "_commit": "d3e22867795499bfa3e5ce3b5c2d0a475bd4fbf5"
+    }
+  },
+  "directory": "monorepo",
+  "skip": [
+    ".git"
+  ]
+}
