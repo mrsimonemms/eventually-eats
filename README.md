@@ -4,6 +4,7 @@ Your food. Exactly Once. Eventually.
 
 <!-- toc -->
 
+* [How To run](#how-to-run)
 * [Contributing](#contributing)
   * [Open in a container](#open-in-a-container)
   * [Commit style](#commit-style)
@@ -11,6 +12,19 @@ Your food. Exactly Once. Eventually.
 <!-- Regenerate with "pre-commit run -a markdown-toc" -->
 
 <!-- tocstop -->
+
+## How To run
+
+Running is very simple:
+
+```sh
+docker compose up
+```
+
+This will start a new Temporal server, the workflow and the web application:
+
+* [Temporal](http://localhost:8233)
+* [Web app](https://localhost:9999)
 
 ## Contributing
 

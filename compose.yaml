@@ -1,4 +1,27 @@
 services:
+  web:
+    build:
+      context: .
+      dockerfile: ./apps/node.Dockerfile
+      target: dev
+      args:
+        APP: web
+    environment:
+      TEMPORAL_ADDRESS: temporal:7233
+      TEMPORAL_CONNECTION_TIMEOUT: 60s
+      VITE_HOST: 0.0.0.0
+      VITE_PORT: 9999
+    ports:
+      - 9999:9999
+    restart: on-failure
+    volumes:
+      - ./apps:/home/node/root/apps
+    depends_on:
+      workflow:
+        condition: service_started
+      temporal:
+        condition: service_healthy
+
   workflow:
     build:
       context: .

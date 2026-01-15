@@ -46,7 +46,7 @@ WORKDIR /opt/app
 ENV GIT_COMMIT="${GIT_COMMIT}"
 ENV VERSION="${VERSION}"
 ENV SERVER_PORT=3000
-COPY --from=builder /home/node/root/apps/$APP/dist dist
+COPY --from=builder /home/node/root/apps/$APP/build build
 COPY --from=builder /home/node/root/apps/$APP/node_modules node_modules
 COPY --from=builder /home/node/root/apps/$APP/package.json package.json
 COPY --from=builder /home/node/root/apps/$APP/package-lock.json package-lock.json
