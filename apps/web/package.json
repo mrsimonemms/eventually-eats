@@ -40,7 +40,7 @@
     "prettier-plugin-organize-imports": "^4.1.0",
     "prettier-plugin-svelte": "^3.3.3",
     "sass": "^1.89.2",
-    "svelte": "^5.0.0",
+    "svelte": "^5.53.0",
     "svelte-check": "^4.0.0",
     "typescript": "^5.0.0",
     "typescript-eslint": "^8.20.0",
