@@ -1,7 +1,7 @@
 <nav class="navbar" aria-label="main navigation">
   <div class="navbar-brand has-text-weight-bold">
     <a class="navbar-item" href="/">
-      <img src="/logo.png" alt="Eventually Eats" />
+      <img src="/eventuallyassembled.png" alt="Eventually Assembled" />
     </a>
   </div>
 

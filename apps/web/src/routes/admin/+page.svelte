@@ -33,7 +33,7 @@
         break;
       case 'ACCEPTED':
         next = {
-          name: 'Start cooking',
+          name: 'Prepare',
           status: 'PREPARING',
         };
         break;
@@ -107,7 +107,7 @@
   let orders: O[] = $state([]);
 </script>
 
-Manage your kitchen orders
+Manage your orders
 
 {#if orders.length === 0}
   <div class="my-5 message">

@@ -84,7 +84,7 @@
               <div class="card-header">
                 <div class="card-header-title">{item.name}</div>
               </div>
-              <div class="card-content">&pound;{item.price.toFixed(2)}</div>
+              <div class="card-content">&euro;{item.price.toFixed(2)}</div>
               <div class="card-footer">
                 <button
                   onclick={() => removeItem(item.id)}
@@ -117,7 +117,7 @@
         <tr>
           <td></td>
           <td></td>
-          <td>&pound;{getTotal().toFixed(2)}</td>
+          <td>&euro;{getTotal().toFixed(2)}</td>
         </tr>
       </tfoot>
       <tbody>
@@ -127,7 +127,7 @@
             <td>{i?.name}</td>
             <td>{item[1]}</td>
             <td>
-              &pound;{((i?.price ?? 0) * item[1]).toFixed(2)}
+              &euro;{((i?.price ?? 0) * item[1]).toFixed(2)}
             </td>
           </tr>
         {/each}

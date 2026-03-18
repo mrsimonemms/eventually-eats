@@ -1,28 +1,28 @@
 export const products: IProduct[] = [
   {
     id: 1,
-    name: 'Chips',
-    price: 3.5,
+    name: 'Shëlff',
+    price: 12.99,
   },
   {
     id: 2,
-    name: 'Battered cod',
-    price: 8.75,
+    name: 'Kåffë Tåblë',
+    price: 49.99,
   },
   {
     id: 3,
-    name: 'Battered haddock',
-    price: 9.75,
+    name: 'Böökëkäsë',
+    price: 79.99,
   },
   {
     id: 4,
-    name: 'Curry sauce',
-    price: 1.45,
+    name: 'Kåblë Tïdy',
+    price: 2.99,
   },
   {
     id: 5,
-    name: 'Gravy',
-    price: 1.45,
+    name: 'Kändlën',
+    price: 3.49,
   },
 ];
 

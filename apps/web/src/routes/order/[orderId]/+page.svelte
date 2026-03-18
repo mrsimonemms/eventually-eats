@@ -47,7 +47,7 @@
 
 {#if order}
   {#if order.status === 'COMPLETED'}
-    <p class="is-size-2">Enjoy your grub</p>
+    <p class="is-size-2">It's Allen key time</p>
   {:else if order.status === 'REJECTED'}
     <p class="is-size-2">
       Sorry, we can't do your order - your money has been refunded

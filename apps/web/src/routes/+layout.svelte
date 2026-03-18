@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-  <title>Eventually Eats</title>
+  <title>Eventually Assembled</title>
 </svelte:head>
 
 <div class="container">
@@ -14,8 +14,8 @@
 
 <section class="section">
   <div class="container">
-    <h1 class="title">Welcome to Eventually Eats</h1>
-    <h2 class="subtitle">Your food. Exactly once. Eventually.</h2>
+    <h1 class="title">Welcome to Eventually Assembled</h1>
+    <h2 class="subtitle">Your furniture. Some assembly required. Eventually.</h2>
 
     {@render children()}
   </div>
