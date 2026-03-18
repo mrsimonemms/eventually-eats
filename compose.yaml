@@ -22,6 +22,18 @@ services:
       temporal:
         condition: service_healthy
 
+  # Pre-build the web app
+  web-init:
+    image: alpine/curl
+    environment:
+      WEB_URL: http://web:9999
+    restart: on-failure
+    links:
+      - web
+    command:
+      - -fSsL
+      - http://web:9999
+
   workflow:
     build:
       context: .
