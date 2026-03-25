@@ -38,7 +38,7 @@
     await getOrder();
     setInterval(async () => {
       await getOrder();
-    }, 5000);
+    }, 1000);
   });
 
   let err: string = $state('');
